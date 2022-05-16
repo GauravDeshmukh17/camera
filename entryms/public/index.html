@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Entry Management Software</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js"
+  type="text/javascript" charset="utf-8"></script>
+<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js"
+  type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container mt-4">
+    <form method="POST" action="/details" id="hostvisitorDetails">
+      <h1 class="m-4 text-center">VISITOR'S INFORMATION</h1>
+      <div class="form-group row">
+        <label for="inputVisitorName" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputVisitorName" placeholder="Name" name="visitorName">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputVisitorEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputVisitorEmail" placeholder="Email" name="visitorEmail">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputVisitorPhoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="inputVisitorPhoneNumber" placeholder="Enter your 10 digit Phone Number"
+            name="visitorPhone">
+        </div>
+      </div>
+      <h1 class="m-4 text-center">HOST'S INFORMATION</h1>
+      <div class="form-group row">
+        <label for="inputHostName" class="col-sm-2 col-form-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputHostName" placeholder="Name" name="hostName">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputHostEmail" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputHostEmail" placeholder="Email" name="hostEmail">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputHostPhoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="inputHostPhoneNumber" placeholder="Enter your 10 digit Phone Number"
+            name="hostPhone">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="mx-auto">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+  <div class="nav justify-content-end m-4">
+    <button type="button" class="btn btn-danger buttons"><a href="/checkout">Leave</a></button>
+    <button type="button" class="btn btn-success buttons"><a href="/dashboard">Dashboard</a></button>
+  </div>
+
+  <!-- <div id="demo">
+      <button onclick="getLocation()"> getLocation</button>
+    </div> -->
+  <script src="script.js"></script>
+</body>
+
+</html>
